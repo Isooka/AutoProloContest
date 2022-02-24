@@ -21,3 +21,21 @@ suivant.addEventListener('click', function() {
     enleverActiveImages();
     img__slider[etape].classList.add('active');
 })
+precedent.addEventListener("click", function() {
+    etape--;
+    if(etape < 0) {
+        etape = nbr__img - 1;
+    }
+    enleverActiveImages();
+    img__slider[etape].classList.add('active');
+
+})
+setInterval(function() {
+    etape++;
+    if(etape >= nbr__img) {
+        etape = 0;
+    }
+    enleverActiveImages();
+    img__slider[etape].classList.add('active');
+
+},  4000)
