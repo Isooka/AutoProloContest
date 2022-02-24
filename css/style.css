@@ -1,9 +1,26 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
-.slider_container{
-    height: 750px;
+.slider{
+    height: 50vh;
+    position: relative;
+    
+    
+}
+.silder img{
+    object-fit: cover;
     width: 100%;
-    border: 2px solid black;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.suivant, .precedent{
+    color: #FFF;
+    font-size: 3rem;
+     position:absolute;
+     top:50%;
+     transform: translateY(-50%);
 }
