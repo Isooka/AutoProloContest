@@ -1,7 +1,5 @@
 let img__slider = document.getElementsByClassName('img__slider');
-
 let etape = 0;
-
 let nbr__img = img__slider.length;
 
 let precedent = document.querySelector('.precedent');
@@ -21,6 +19,7 @@ suivant.addEventListener('click', function() {
     enleverActiveImages();
     img__slider[etape].classList.add('active');
 })
+
 precedent.addEventListener("click", function() {
     etape--;
     if(etape < 0) {
@@ -30,6 +29,7 @@ precedent.addEventListener("click", function() {
     img__slider[etape].classList.add('active');
 
 })
+
 setInterval(function() {
     etape++;
     if(etape >= nbr__img) {
