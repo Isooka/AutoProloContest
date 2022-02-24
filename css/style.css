@@ -9,18 +9,32 @@
     
     
 }
-.silder img{
+
+
+.slider img{
+    max-width: 1520px;
     object-fit: cover;
     width: 100%;
     height: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     left:0;
+    opacity:0;
+    transition:opacity .5s;
+}
+.slider img.active {
+    opacity:1;
 }
 .suivant, .precedent{
-    color: #FFF;
+    color: #F5DD29;
     font-size: 3rem;
-     position:absolute;
-     top:50%;
-     transform: translateY(-50%);
+    position:absolute; 
+    top:50%;
+    transform: translateY(-50%);
+}
+.suivant{
+    right: 1rem;
+}
+.precedent{
+    left: 1rem;
 }
