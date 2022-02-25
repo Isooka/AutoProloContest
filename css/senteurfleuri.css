@@ -37,3 +37,11 @@
 .precedent{
     left: 1rem;
 }
+
+.texte-bgh1{
+    color: #fff;
+    font-size: 40px;
+    z-index: 2;
+    display: flex;
+    width: 40%;
+}
