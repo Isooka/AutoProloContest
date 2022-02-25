@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    pading: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+  }
+  body{
+    background-color: rgb(63,72,83);
+    font-family: sans-serif;
+    color: rgb(220,220,220);
+    padding: 50px;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  h1{
+    font-size: 50px;
+  }
+  a{
+    color: inherit;
+  }
+  p{
+    margin-top: .7em;
+  }
+ 
+ 
+  
+
+  
+  ._rank{
+    min-width: 80px;
+  }
+  ._id{
+    min-width: 60px;
+  }
+  ._name{
+    min-width: 130px;
+  }
+  ._surname{
+    min-width: 130px;
+  }
+  ._year{
+    min-width: 80px;
+  }
+  ._section{
+    min-width: 130px;
+  }
+  
+  pre{
+    overflow: auto;
+  }
+  
+  /** Sticky table styles **/
+  .st_viewport{
+    background-color: #fff7f7 ;
+    color: rgb(92, 82, 82);
+    margin: 20px 0;
+  }
+  /* ###  Table wrap */
+  .st_wrap_table{
+    
+  }
+  /* ##   header */
+  .st_table_header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: rgb(41, 35, 35);
+    color: rgb(255, 255, 255);
+  }
+  .st_table_header h2{
+    font-weight: 400;
+    margin: 0 20px;
+    padding: 20px 0 0;
+  }
+  .st_table_header .st_row{
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .st_table_header .st_column{
+    
+  }
+  /* ##  table */
+  .st_table{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* #   row */
+  .st_row{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .st_table .st_row:nth-child(even){
+    background-color: rgba(204, 25, 25, 0.1)
+  }
+  /* #   column */
+  .st_column{
+    padding: 10px 20px;
+  }
+ .image{
+     margin-left: 200px;
+     
+ }
+
+  td,
+th {
+    border: 1px solid rgb(12, 12, 12);
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(248, 247, 247);
+}
+
+th[scope="col"] {
+    background-color: #696969;
+    color: rgb(233, 233, 233);
+}
+
+th[scope="row"] {
+    background-color: #ffffff;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(219, 219, 219);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+}
